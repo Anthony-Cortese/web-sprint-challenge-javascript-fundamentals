@@ -52,8 +52,7 @@ const zooAnimals = [
     { animal_name: "Hawk-eagle, crowned", population: 10, scientific_name: "Spizaetus coronatus", state: "Florida" },
     { animal_name: "Australian pelican", population: 5, scientific_name: "Pelecanus conspicillatus", state: "West Virginia" },
   ];
-  
-  /* 🦁🦁🦁 Request 1: .forEach() 🦁🦁🦁
+   /* 🦁🦁🦁 Request 1: .forEach() 🦁🦁🦁
   The zoos want to display both the scientific name and the animal name in front of the habitats. Populate the displayNames array with only the animal_name and scientific_name of each animal. displayNames will be an array of strings, and each string should follow this pattern: "Name: Jackal, asiatic, Scientific: Canis aureus."
   */
   function animalNames(){
@@ -61,8 +60,6 @@ const zooAnimals = [
       console.log(item.animal_name);
       console.log(item.scientific_name)
     });
-  
-  
     /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
   The zoos need a list of all their animal's names (animal_name only) converted to lower case. Using map, create a new array of strings named lowCaseAnimalNames, each string following this pattern: "jackal, asiatic". Log the resut.
   */
@@ -109,13 +106,14 @@ const zooAnimals = [
     consume(sum);
   }
 // 🦁🦁🦁 Create a function named multiply that returns the product of two numbers 🦁🦁🦁
-  function multiply(/*Your Code Here */){
-   /*Your Code Here */
+  function multiply(a, b){
+   let product = a * b;
+   consume(product)
   }
 
  // 🦁🦁🦁 Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!" 🦁🦁🦁
-  function greeting(/*Your Code Here */){
-   return /*Your Code Here */
+  function greeting(firstName, lastName){
+   return `Hello ${firstName} ${lastName} nice to meet you!`
   }
   
   // 🦁🦁🦁 Step 3: Check your work by un-commenting the following calls to consume(): 🦁🦁🦁 
@@ -198,21 +196,21 @@ class CuboidMakerTwo{
 
 
 // /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑 */
-//   function foo(){
-//     console.log('its working');
-//     return 'bar';
-//   }
-//   export default{
-//     foo,
-//     summation,
-//     animalNames,
-//     lowerCaseNames,
-//     lowPopulationAnimals,
-//     USApop,
-//     consume, 
-//     add,
-//     multiply,
-//     greeting,
-//     CuboidMaker,
-//     CuboidMakerTwo
-//   }
+  function foo(){
+    console.log('its working');
+    return 'bar';
+  }
+  export default{
+    foo,
+    summation,
+    animalNames,
+    lowerCaseNames,
+    lowPopulationAnimals,
+    USApop,
+    consume, 
+    add,
+    multiply,
+    greeting,
+    CuboidMaker,
+    CuboidMakerTwo
+  }

@@ -16,7 +16,7 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
+// nested functions are made for convenience. They can access outer variables and they are able to be returned!
 
 
 
@@ -63,7 +63,7 @@ const zooAnimals = [
     /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
   The zoos need a list of all their animal's names (animal_name only) converted to lower case. Using map, create a new array of strings named lowCaseAnimalNames, each string following this pattern: "jackal, asiatic". Log the resut.
   */
-  function lowerCaseNames(/*Your Code Here*/){
+  function lowerCaseNames(){
     const newZooAnimals = zooAnimals.map(function(item){
       return item.name.toLowerCase();
     });
@@ -72,7 +72,7 @@ const zooAnimals = [
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
   The zoos are concerned about animals with a lower population count. Using filter, create a new array of objects called lowPopulationAnimals which contains only the animals with a population less than 5.
   */
-  function lowPopulationAnimals(/*Your Code Here*/){
+  function lowPopulationAnimals(){
     const newZooAnimals = zooAnimals.filter(function(item){
       return item.lowPopulationAnimals < 5;
     })
@@ -81,7 +81,7 @@ const zooAnimals = [
     /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
   The zoos need to know their total animal population across the United States. Find the total population from all the zoos using the .reduce() method. Remember the reduce method takes two arguments: a callback (which itself takes two args), and an initial value for the count.
   */
-  function USApop(/*Your Code Here*/){
+  function USApop(){
     const totalPop = zooAnimals.reduce(function(accumulator, item){
       return accumulator + item.state;
     },0);
@@ -134,17 +134,17 @@ const zooAnimals = [
 /* 🐴🐴🐴 Step 1: Base Constructor 🐴🐴🐴
   Create a constructor function named CuboidMaker that accepts properties for length, width, and height which can be initialized as an object
 */
-function CuboidMaker(attributes){
-  this.length = attributes.length;
-  this.width = attributes.width;
-  this.height = attributes.height
+function CuboidMaker(traits){
+  this.length = traits.length;
+  this.width = traits.width;
+  this.height = traits.height
 }
 
 
 /* 🐴🐴🐴 Step 2: Volume Method 🐴🐴🐴
   Create a method using CuboidMaker's prototype that returns the volume of a given cuboid's length, width, and height
   Formula for cuboid volume: length * width * height   */
-
+CuboidMaker.prototype
 
 
 
@@ -196,21 +196,21 @@ class CuboidMakerTwo{
 
 
 // /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑 */
-  function foo(){
-    console.log('its working');
-    return 'bar';
-  }
-  export default{
-    foo,
-    summation,
-    animalNames,
-    lowerCaseNames,
-    lowPopulationAnimals,
-    USApop,
-    consume, 
-    add,
-    multiply,
-    greeting,
-    CuboidMaker,
-    CuboidMakerTwo
-  }
+  // function foo(){
+  //   console.log('its working');
+  //   return 'bar';
+  // }
+  // export default{
+  //   foo,
+  //   summation,
+  //   animalNames,
+  //   lowerCaseNames,
+  //   lowPopulationAnimals,
+  //   USApop,
+  //   consume, 
+  //   add,
+  //   multiply,
+  //   greeting,
+  //   CuboidMaker,
+  //   CuboidMakerTwo
+  // }
